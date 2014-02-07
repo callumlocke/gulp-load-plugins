@@ -58,7 +58,7 @@ gulpLoadPlugins({
     config: "package.json", // where to find the plugins
     scope: ["dependencies", "devDependencies", "peerDependencies"], // which keys in the config to look within
     replaceString: "gulp-", // what to remove from the name of the module when adding it to the context
-    camelize: true // if true, transforms hyphenated plugins names to camel case
+    camelize: false // whether to convert gulp-foo-bar to fooBar (default: true)
 });
 ```
 
